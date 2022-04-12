@@ -6,6 +6,8 @@ namespace _101BootcampImplementIComparable07M
     {
         static void Main(string[] args)
         {
+
+            // TESTING 
             House h1 = new House(15500, "6743 Daveport Drive, Smallville, Ohio 58390");
     
             House h2 = new House(1200, "1101 Willocreek Lane, Columbia, MO 65203");
@@ -28,9 +30,18 @@ namespace _101BootcampImplementIComparable07M
             Array.Sort(houses);
             Array.ForEach(houses, h => Console.WriteLine($"House description and footage: {h.Description}, {h.SquareFootage}"));
 
-            
-            
 
+            Console.WriteLine();
+            
+            for (int i = 0; i < houses.Length; i++)
+            {
+                Console.WriteLine($"House description and footage: {houses[i].Description}, {houses[i].SquareFootage}");
+            }
+
+            foreach (var item in houses) // this works because houses is a array and IEnumerable is implemented for arrays
+            {
+
+            }
 
         }
     }
