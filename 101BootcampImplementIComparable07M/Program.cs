@@ -28,11 +28,15 @@ namespace _101BootcampImplementIComparable07M
 
             // using the Icomparable interface
             Array.Sort(houses);
-            Array.ForEach(houses, h => Console.WriteLine($"House description and footage: {h.Description}, {h.SquareFootage}"));
+
+            //// printing out result of the sort
+            //Array.ForEach(houses, h => Console.WriteLine($"House description and footage: {h.Description}, {h.SquareFootage}"));
 
 
             Console.WriteLine();
             
+
+            // printing out result of the sort
             for (int i = 0; i < houses.Length; i++)
             {
                 Console.WriteLine($"House description and footage: {houses[i].Description}, {houses[i].SquareFootage}");

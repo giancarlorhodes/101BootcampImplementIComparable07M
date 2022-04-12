@@ -27,10 +27,8 @@ namespace _101BootcampImplementIComparable07M
 
         }
 
-
-       
     }
 
 
-    
+
 }
