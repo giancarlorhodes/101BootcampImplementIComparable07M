@@ -17,15 +17,18 @@ namespace _101BootcampImplementIComparable07M
 
         public int CompareTo(House h)
         {
-           
+
             if (h.SquareFootage > this.SquareFootage)
-                return -1;
-            else if (h.SquareFootage < this.SquareFootage)  
+                return -1; // this instance precedes / comes before object passed in
+            else if (h.SquareFootage < this.SquareFootage)
                 return 1;
             else
-                 return 0;
-                  
+                return 0;
+
         }
+
+
+       
     }
 
 
